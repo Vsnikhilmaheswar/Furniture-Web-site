@@ -5,7 +5,7 @@
 }
 
 :root{
-    --x:rgb(62,2,2)
+    --x:#1c2d41
 }
 
 .logo{
@@ -68,6 +68,16 @@ font-size: 20px;
     background-size: cover;
 }
 
+.work{
+    margin-top: 10%;
+    background-image: url('https://img.freepik.com/premium-vector/light-blurred-bokeh-background-vector-illustration_64749-4575.jpg');
+    padding-top: 8%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
 #WELCOME{
    
     color: white;
@@ -85,7 +95,7 @@ font-size: 20px;
     border-color: white;
     color: white;
     
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bolder;
 
 }
@@ -96,4 +106,102 @@ font-size: 20px;
     background-color: black;
     font-size: 20px;
     font-weight: 600;
+}
+
+
+
+.card a{
+    background-color: white;
+    border-radius: 0;
+    color: #1c2d41;
+    border-color: #1c2d41;
+    font-weight: 800;
+
+
+}
+.card{
+    border: none;
+}
+.card a:hover{
+    background-color: #1c2d41;
+    border-radius: 0;
+    color: white;
+    border-color: white;
+    font-weight: 800;
+
+
+}
+
+.img1 {
+    object-fit: cover;
+   
+    height: 400px;
+
+   
+}
+
+.img2 {
+    object-fit: cover;
+
+    height: 400px;
+   
+  
+}
+.img3 {
+    object-fit: cover;
+
+    height: 400px;
+
+    
+}
+.work-title{
+font-size:23px;
+padding: 0;
+}
+
+.work-title1{
+    font-size:22px;
+    padding: 0;
+    }
+    
+    @media(max-width:750px)
+    {
+     #WELCOME h4{
+        font-size: 19px;
+     }
+     #WELCOME h1{
+        font-size: 25px;
+     }
+     #WELCOME h2{
+        font-size: 22px;
+     }
+    }
+    
+
+    .about{
+        background-color: rgb(87, 87, 87,0.677);
+        padding-top:7% ;
+        padding-bottom: 4%;
+        }   
+
+.aboutdiv{
+border-width: 10px;
+border: 5px solid   var(--x);
+padding-left: 5%;
+padding-top: 5%;
+height: 450px;
+
+}
+#hr{
+    width: 200px;
+    height: 7px;
+    background-color: var(--x);
+}
+
+.Btnview{
+    background-color: white;
+    border-radius: 0;
+    color: #1c2d41;
+    border-color: #1c2d41;
+    font-weight: 800;
 }
