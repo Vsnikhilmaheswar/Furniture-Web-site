@@ -1,74 +1,92 @@
 *{
+    font-family: "Playfair Display", serif;
     margin: 0px;
     padding: 0px;
-    font-family: Libre Baskerville Static;
+   
+    
 }
 
 :root{
-    --x:#1c2d41
+    --x :rgb(79, 7, 7)
 }
-
-.logo{
-    width: 160px;
-    height: 75px;
-   
-    object-fit: cover;
-}
-.fa-twitter ,.fa-facebook-f ,.fa-instagram{
-    font-size: 30px;
-    padding: 5px;
-    align-items: center;
-    color: #1c2d41;
-}
-
-.fa-twitter:hover ,.fa-facebook-f:hover ,.fa-instagram :hover{
-    font-size: 30px;
-    padding: 5px;
-    align-items: center;
-    color: #1c2d41eb;
-}
-
-
-
-.img2{
+#logo{
     width: 100%;
-    height: 100%;
-    
-}
-.ContactBtn{
-    background-color: #1c2d41;
-    border-radius: 0;
-    color: aliceblue;
-    font-weight: 800;
+    height: 100px;
 }
 
-.ContactBtn:hover{
-    background-color:#1c2d41eb;
-    border-radius: 0;
-    color: aliceblue;
-    font-weight: 800;
+ul li{
+    font-size: 20px; 
 }
-.nav-item a{
-color: gray;
-font-size: 20px;
+li i{
+    color: rgb(198, 196, 196);
 }
-@media(max-width:992px)
-{
+
+#buttn{
+    background-color:var(--x);
+    color: white;
+}
+
+#buttn:hover{
+    background-color: white;
+    color: var(--x);
+    border-color: var(--x);
+}
+
+@media(max-width:992px){
     .nav-item i{
-     display: none;
+        display: none;
     }
 }
 
 #main{
-    background-image: url(media/pic1.jpg);
-    width: 100%;
-    height: 100vh;
+    background-image: url('./images/table1.png');
+    /* height: 120vh; */
     background-repeat: no-repeat;
-    background-position:fixed;
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+   
+  
+}
+#bl{
+    width: 100%;
+   /*  height: 120vh; */
+    background-color: rgba(0, 0, 0, 0.32);
 }
 
-.work{
+
+#welcome{
+    padding-top: 22%;
+    padding-left: 5%;
+}
+#welcome h4{
+  color: white;
+  font-size: 30px;  
+}
+
+
+#welcome h1{
+    color: white;
+    font-size: 100px;
+
+  }
+
+  @media(max-width:600px){
+    #main{
+        background-position: bottom;
+    }
+    #welcome h4{
+        
+        font-size: 20px;  
+      }
+      #welcome h1{
+        font-size: 50px;
+    
+      }
+  }
+
+
+  #work{
     margin-top: 10%;
     background-image: url('https://img.freepik.com/premium-vector/light-blurred-bokeh-background-vector-illustration_64749-4575.jpg');
     padding-top: 8%;
@@ -77,131 +95,70 @@ font-size: 20px;
     background-size: cover;
   }
 
+  div .viewbtn{
+    border-color: var(--x);
+    color: var(--x);
+  }
 
-#WELCOME{
-   
-    color: white;
-    margin-top: 8%;
-    margin-left: 9%;
-}
-#WELCOME h4{
-    
-   font-size: 50px;
-}
-#WELCOME h1{
-    font-size: 100px;
-}
-#WELCOME button{
-    border-color: white;
-    color: white;
-    
-    font-size: 15px;
-    font-weight: bolder;
-
-}
-
-#WELCOME button:hover{
-    border-color: white;
-    color:#729cbb;
-    background-color: black;
-    font-size: 20px;
-    font-weight: 600;
-}
-
-
-
-.card a{
-    background-color: white;
-    border-radius: 0;
-    color: #1c2d41;
-    border-color: #1c2d41;
-    font-weight: 800;
-
-
-}
-.card{
-    border: none;
-}
-.card a:hover{
-    background-color: #1c2d41;
-    border-radius: 0;
-    color: white;
-    border-color: white;
-    font-weight: 800;
-
-
-}
-
-.img1 {
-    object-fit: cover;
-   
-    height: 400px;
-
-   
-}
-
-.img2 {
-    object-fit: cover;
-
-    height: 400px;
-   
-  
-}
-.img3 {
-    object-fit: cover;
-
-    height: 400px;
-
-    
-}
-.work-title{
-font-size:23px;
-padding: 0;
-}
-
-.work-title1{
-    font-size:22px;
-    padding: 0;
-    }
-    
-    @media(max-width:750px)
-    {
-     #WELCOME h4{
-        font-size: 19px;
-     }
-     #WELCOME h1{
-        font-size: 25px;
-     }
-     #WELCOME h2{
-        font-size: 22px;
-     }
-    }
-    
-
-    .about{
-        background-color: rgb(87, 87, 87,0.677);
-        padding-top:7% ;
-        padding-bottom: 4%;
-        }   
-
-.aboutdiv{
-border-width: 10px;
-border: 5px solid   var(--x);
-padding-left: 5%;
-padding-top: 5%;
-height: 450px;
-
-}
-#hr{
-    width: 200px;
-    height: 7px;
+  div .viewbtn:hover{
     background-color: var(--x);
+    color: white;
+  }
+
+  #about{
+    background-color: rgb(219, 219, 219);
+    padding: 10% 0px; 
+  }
+
+  #hr{
+    height: 0.4rem;
+    width: 10rem;
+    background-color: var(--x);
+  }
+  #about h1{
+    color: var(--x);
+  }
+ #about p{
+    text-align: justify;
+ }
+
+ #abImg{
+  border: 7px solid var(--x);
+  width: 90%;
+  height:490px ;
+  padding-top: 4%;
+  padding-left: 4%;
+ }
+#projGDiv1{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#projGDiv1 img{
+  position: absolute;
+  height: 100%;
 }
 
-.Btnview{
-    background-color: white;
-    border-radius: 0;
-    color: #1c2d41;
-    border-color: #1c2d41;
-    font-weight: 800;
-}
+ .projGDiv2{
+  width: 55%;
+  height: 20%;
+  background-color: rgba(0, 0, 0, 0.893);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: absolute;
+ bottom: 0px;
+ }
+
+ .projGDiv3{
+  width: 55%;
+  height: 20%;
+  background-color: rgba(0, 0, 0, 0.893);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: absolute;
+  bottom: 0px;
+ }
